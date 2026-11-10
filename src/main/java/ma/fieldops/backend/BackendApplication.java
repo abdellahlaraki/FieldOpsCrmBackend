@@ -21,7 +21,7 @@ public class BackendApplication {
         SpringApplication.run(BackendApplication.class, args);
     }
 
-    @Bean
+  /*  @Bean
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
@@ -56,5 +56,5 @@ public class BackendApplication {
         User user=User.builder().fullName(fullName).email(email).active(true).username(username).passwordHash(passwordEncoder.encode(password)).build();
         user.getRoles().addAll(Arrays.asList(roles));
         repo.save(user);
-    }
+    }*/
 }
